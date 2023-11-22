@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<title>Price range slider</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="inputs">
+			<label class="input-label">
+				<input class="price-input min-input" type="number" value="0">
+			</label>
+			<label class="input-label">
+				<input class="price-input max-input" type="number" data-max="1500">
+			</label>
+
+		</div>
+
+		<div class="slider">
+			<div class="slider-line"></div>
+		</div>
+
+		<div class="slider-buttons">
+			<input class="slider-input min-slider-input" type="range" min="0" max="1500" value="0" step="10">
+			<input class="slider-input max-slider-input" type="range" min="0" max="1500" value="1500" step="10">
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
